@@ -1,0 +1,61 @@
+/* All dice */
+
+[class^='die'] {
+    display: flex;
+    border: 2px solid black;
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin: 2em;
+    border-radius: 1em;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+
+/* Each die */
+
+.die4 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.die6 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.die8 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 125px;
+    border-left-width: 125px;
+    border-bottom: 125px solid #2A623D;
+    border-radius: 0;
+    padding: 0;
+}
+
+.die10 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 125px;
+    border-left-width: 125px;
+    border-bottom: 100px solid #5E95C6;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+/* Create pip */
+
+.pip {
+    background: black;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 12.5px;
+}
