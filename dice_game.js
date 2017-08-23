@@ -65,6 +65,7 @@ function hideQuestion6() {
     document.getElementById("continue").style.display = "none";
     // document.getElementById("die1").style.display = "block";
     roll20Sided();
+    console.log(finalStatement());
 }
 
 function restart() {
@@ -73,6 +74,12 @@ function restart() {
     document.getElementById("die1").style.display = "block";
     location.reload();
 }
+
+function finalStatement() {
+    console.log(quest1 + " " + quest2 + " " + quest3 + " " + quest4 + " " + quest5 + " " + quest6);
+}
+
+// finalStatement();
 
 
 function roll4Sided() {
@@ -348,10 +355,3 @@ function roll20Sided() {
 }
 
 // roll20Sided();
-
-
-// function finalStatement() {
-//     console.log(roll4Sided + roll6Sided + roll8Sided + roll12Sided + roll10Sided + roll20Sided);
-// }
-
-// finalStatement();

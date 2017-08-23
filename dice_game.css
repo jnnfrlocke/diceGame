@@ -1,10 +1,29 @@
-/* #question2,
-#question3,
-#question4,
-#question5,
-#question6 {
-    display: none;
-} */
+:root {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    background-color: #B0AACD;
+    border-radius: 25px;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+#end {
+    cursor: pointer;
+}
+
+#dice {
+    display: inline-block;
+    width: 125px;
+    margin: auto;
+}
 
 
 /* All dice */
@@ -17,9 +36,10 @@
     float: left;
     margin: 2em;
     border-radius: 1em;
-    padding: 8px;
+    padding: 1em;
     justify-content: space-between;
     background-color: white;
+    margin: auto;
 }
 
 
@@ -30,11 +50,20 @@
     /*horizontal center*/
     align-items: center;
     /*vertical center*/
+    cursor: pointer;
+}
+
+.die2 {
+    cursor: pointer;
 }
 
 .die2 .pip:nth-of-type(2) {
     align-self: flex-end;
     /* justify-content: space-around; */
+}
+
+.die3 {
+    cursor: pointer;
 }
 
 .die3 .pip:nth-of-type(2) {
@@ -45,10 +74,18 @@
     align-self: flex-end;
 }
 
+.die4 {
+    cursor: pointer;
+}
+
 .die4 .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.die5 {
+    cursor: pointer;
 }
 
 .die5 .column {
@@ -61,6 +98,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.die6 {
+    cursor: pointer;
 }
 
 .die6 .column {
