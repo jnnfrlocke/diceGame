@@ -1,27 +1,42 @@
 // A game that uses at least one 4-sided, 6-sided, 8-sided, 10-sided, 12-sided, and 20-sided dice
 
-function roll4Sided() {
-    var roll4 = (Math.round(Math.random() * (4 - 1) + 1));
-    if (roll4 === 1) {
-        console.log("You'll be visiting a location by the sea.");
-    } else if (roll4 === 2) {
-        console.log("You're going to a place in the woods.");
-    } else if (roll4 === 3) {
-        console.log("You are going to the city.");
-    } else {
-        console.log("You'll be on a tropical island");
-    }
-    console.log(roll4);
-}
-
-roll4Sided();
-
-// function roll6Sided() {
-//     var roll6 = (Math.round(Math.random() * (6 - 1) + 1));
-//     console.log(roll6);
+// function roll4Sided() {
+//     var roll4 = (Math.round(Math.random() * (4 - 1) + 1));
+//     if (roll4 === 1) {
+//         console.log("You'll be visiting a location by the sea.");
+//     } else if (roll4 === 2) {
+//         console.log("You're going to a place in the woods.");
+//     } else if (roll4 === 3) {
+//         console.log("You are going to the city.");
+//     } else {
+//         console.log("You'll be on a tropical island");
+//     }
+//     console.log(roll4);
 // }
 
-// roll6Sided();
+// roll4Sided();
+
+function roll6Sided() {
+    var roll6 = (Math.round(Math.random() * (6 - 1) + 1));
+    if (roll6 === 1) {
+        console.log("You'll be staying in a hotel.");
+    } else if (roll6 === 2) {
+        console.log("You'll be staying at an all-inclusive resort.");
+    } else if (roll6 === 3) {
+        console.log("You will stay at a cozy bed & breakfast.");
+    } else if (roll6 === 4) {
+        console.log("You're going to be sleeping in a tent.");
+    } else if (roll6 === 5) {
+        console.log("You will stay on a house boat.");
+    } else {
+        console.log("You will stay with friends and family.");
+    }
+    // console.log(roll6);
+}
+
+roll6Sided();
+
+
 
 // function roll8Sided() {
 //     var roll8 = (Math.round(Math.random() * (8 - 1) + 1));
