@@ -6,3 +6,10 @@ function roll4Sided() {
 }
 
 roll4Sided();
+
+function roll6Sided() {
+    var roll6 = (Math.round(Math.random() * (6 - 1) + 1));
+    console.log(roll6);
+}
+
+roll6Sided();
