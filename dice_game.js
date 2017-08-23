@@ -20,3 +20,10 @@ function roll8Sided() {
 }
 
 roll8Sided();
+
+function roll10Sided() {
+    var roll10 = (Math.round(Math.random() * (10 - 1) + 1));
+    console.log(roll10);
+}
+
+roll10Sided();
