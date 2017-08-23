@@ -27,3 +27,10 @@ function roll10Sided() {
 }
 
 roll10Sided();
+
+function roll12Sided() {
+    var roll12 = (Math.round(Math.random() * (12 - 1) + 1));
+    console.log(roll12);
+}
+
+roll12Sided();
