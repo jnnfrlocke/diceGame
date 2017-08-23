@@ -1,6 +1,15 @@
+/* #question2,
+#question3,
+#question4,
+#question5,
+#question6 {
+    display: none;
+} */
+
+
 /* All dice */
 
-[class^='die'] {
+[id^='die'] {
     display: flex;
     border: 2px solid black;
     width: 125px;
@@ -10,10 +19,31 @@
     border-radius: 1em;
     padding: 8px;
     justify-content: space-between;
+    background-color: white;
 }
 
 
 /* Each die */
+
+.die1 {
+    justify-content: center;
+    /*horizontal center*/
+    align-items: center;
+    /*vertical center*/
+}
+
+.die2 .pip:nth-of-type(2) {
+    align-self: flex-end;
+    /* justify-content: space-around; */
+}
+
+.die3 .pip:nth-of-type(2) {
+    align-self: center;
+}
+
+.die3 .pip:nth-of-type(3) {
+    align-self: flex-end;
+}
 
 .die4 .column {
     display: flex;
@@ -21,32 +51,22 @@
     justify-content: space-between;
 }
 
-.die6 .column {
+.die5 .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.die8 {
-    width: 0;
-    height: 0;
-    border: 0 solid transparent;
-    border-right-width: 125px;
-    border-left-width: 125px;
-    border-bottom: 125px solid #2A623D;
-    border-radius: 0;
-    padding: 0;
+.die5 .columnMid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.die10 {
-    width: 0;
-    height: 0;
-    border: 0 solid transparent;
-    border-right-width: 125px;
-    border-left-width: 125px;
-    border-bottom: 100px solid #5E95C6;
-    border-radius: 0;
-    padding: 0;
+.die6 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
