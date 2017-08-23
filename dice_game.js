@@ -13,3 +13,10 @@ function roll6Sided() {
 }
 
 roll6Sided();
+
+function roll8Sided() {
+    var roll8 = (Math.round(Math.random() * (8 - 1) + 1));
+    console.log(roll8);
+}
+
+roll8Sided();
