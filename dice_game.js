@@ -9,75 +9,75 @@ function hideAllButQ1() {
     document.getElementById("question5").style.display = "none";
     document.getElementById("question6").style.display = "none";
     document.getElementById("end").style.display = "none";
-    document.getElementById("die2").style.display = "none";
-    document.getElementById("die3").style.display = "none";
-    document.getElementById("die4").style.display = "none";
-    document.getElementById("die5").style.display = "none";
-    document.getElementById("die6").style.display = "none";
+    document.getElementById("d2").style.display = "none";
+    document.getElementById("d3").style.display = "none";
+    document.getElementById("d4").style.display = "none";
+    document.getElementById("d5").style.display = "none";
+    document.getElementById("d6").style.display = "none";
 }
 hideAllButQ1();
 
 function hideQuestion1() {
     document.getElementById('question1').style.display = "none";
     document.getElementById("question2").style.display = "block";
-    document.getElementById("die1").style.display = "none";
-    document.getElementById("die2").style.display = "block";
+    document.getElementById("d1").style.display = "none";
+    document.getElementById("d2").style.display = "block";
     roll4Sided();
 }
 
 function hideQuestion2() {
     document.getElementById('question2').style.display = "none";
     document.getElementById("question3").style.display = "block";
-    document.getElementById("die2").style.display = "none";
-    document.getElementById("die3").style.display = "block";
+    document.getElementById("d2").style.display = "none";
+    document.getElementById("d3").style.display = "block";
     roll6Sided();
 }
 
 function hideQuestion3() {
     document.getElementById('question3').style.display = "none";
     document.getElementById("question4").style.display = "block";
-    document.getElementById("die3").style.display = "none";
-    document.getElementById("die4").style.display = "block";
+    document.getElementById("d3").style.display = "none";
+    document.getElementById("d4").style.display = "block";
     roll8Sided();
 }
 
 function hideQuestion4() {
     document.getElementById('question4').style.display = "none";
     document.getElementById("question5").style.display = "block";
-    document.getElementById("die4").style.display = "none";
-    document.getElementById("die5").style.display = "block";
+    document.getElementById("d4").style.display = "none";
+    document.getElementById("d5").style.display = "block";
     roll12Sided();
 }
 
 function hideQuestion5() {
     document.getElementById('question5').style.display = "none";
     document.getElementById("question6").style.display = "block";
-    document.getElementById("die5").style.display = "none";
-    document.getElementById("die6").style.display = "block";
+    document.getElementById("d5").style.display = "none";
+    document.getElementById("d6").style.display = "block";
     roll10Sided();
 }
 
 function hideQuestion6() {
     document.getElementById('question6').style.display = "none";
     document.getElementById("end").style.display = "block";
-    document.getElementById("die6").style.display = "none";
+    document.getElementById("d6").style.display = "none";
 
     document.getElementById("continue").style.display = "none";
     // document.getElementById("die1").style.display = "block";
     roll20Sided();
-    console.log(finalStatement());
+    // console.log(finalStatement());
 }
 
 function restart() {
     document.getElementById("end").style.display = "none";
     document.getElementById("question1").style.display = "block";
-    document.getElementById("die1").style.display = "block";
+    document.getElementById("d1").style.display = "block";
     location.reload();
 }
 
-function finalStatement() {
-    console.log(quest1 + " " + quest2 + " " + quest3 + " " + quest4 + " " + quest5 + " " + quest6);
-}
+// function finalStatement() {
+//     console.log(quest1 + " " + quest2 + " " + quest3 + " " + quest4 + " " + quest5 + " " + quest6);
+// }
 
 // finalStatement();
 

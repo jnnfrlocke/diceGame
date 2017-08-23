@@ -56,65 +56,76 @@
 
         <div id="continue">
             <h3>
-                Click on the die below to find out!
+                Click on the die to roll and find out!
             </h3>
         </div>
     </section>
 
     <section id="dice">
         <!-- The choice to use standard 1-6 dice is to represent a number for each step. Also, I have no idea how to make the different shapes for the other dice-->
-        <div id="die1" onclick="hideQuestion1()" class="die1">
-            <span class=pip></span>
-        </div>
-
-        <div id="die2" onclick="hideQuestion2()" class="die2">
-            <span class=pip></span>
-            <span class=pip></span>
-        </div>
-
-        <button id="die3" onclick="hideQuestion3()" class="die3">
-            <span class = pip></span>
-            <span class = pip></span>
-            <span class = pip></span>
-        </button>
-
-        <button id="die4" onclick="hideQuestion4()" class="die4">
-        <div class=column>
-            <span class=pip></span>
-            <span class=pip></span>
-        </div>
-        <div class=column>
-            <span class=pip></span>
-            <span class=pip></span>
-        </div>
-    </button>
-
-        <button id="die5" onclick="hideQuestion5()" class="die5">
-        <div class = column>
-                <span class = pip></span>
-                <span class = pip></span>
-              </div>
-              <div class = columnMid>
-                <span class = pip></span>
-              </div>
-              <div class = column>
-                <span class = pip></span>
-                <span class = pip></span>
-              </div>
-        </button>
-
-        <button id="die6" onclick="hideQuestion6()" class="die6">
-            <div class = column>
-                <span class = pip></span>
-                <span class = pip></span>
-                <span class = pip></span>
+        <div onclick="hideQuestion1()" id="d1">
+            <div class="die1">
+                <span class="pip"></span>
             </div>
-            <div class = column>
-                <span class = pip></span>
-                <span class = pip></span>
-                <span class = pip></span>
+        </div>
+
+        <div onclick="hideQuestion2()" id="d2">
+            <div class="die2">
+                <span class="pip"></span>
+                <span class="pip"></span>
             </div>
-        </button>
+        </div>
+
+        <div onclick="hideQuestion3()" id="d3">
+            <div class="die3">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+
+        <div onclick="hideQuestion4()" id="d4">
+            <div class="die4">
+                <div class="column">
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                </div>
+                <div class="column">
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                </div>
+            </div>
+        </div>
+
+        <div onclick="hideQuestion5()" id="d5">
+            <div class="die5">
+                <div class="column">
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                </div>
+                <div class="columnMid">
+                    <span class="pip"></span>
+                </div>
+                <div class="column">
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                </div>
+            </div>
+        </div>
+
+        <div onclick="hideQuestion6()" id="d6">
+            <div class="die6">
+                <div class="column">
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                </div>
+                <div class="column">
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                    <span class="pip"></span>
+                </div>
+            </div>
 
 
     </section>
@@ -177,7 +188,7 @@
         </div> -->
 
 
-    </section>
+    <!-- </section> -->
 
 
 

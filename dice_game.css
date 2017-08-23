@@ -7,7 +7,7 @@
 header {
     background-color: #B0AACD;
     border-radius: 25px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 
 /* All dice */
 
-[id^='die'] {
+[class^='die'] {
     display: flex;
     border: 2px solid black;
     width: 125px;
