@@ -3,23 +3,6 @@
 
 var finalState = [];
 
-// Hide Q2-Q6, die2-die6 on page load
-// function hideAllButQ1() {
-//     document.getElementById("question2").style.display = "none";
-//     document.getElementById("question3").style.display = "none";
-//     document.getElementById("question4").style.display = "none";
-//     document.getElementById("question5").style.display = "none";
-//     document.getElementById("question6").style.display = "none";
-//     document.getElementById("end").style.display = "none";
-//     document.getElementById("d2").style.display = "none";
-//     document.getElementById("d3").style.display = "none";
-//     document.getElementById("d4").style.display = "none";
-//     document.getElementById("d5").style.display = "none";
-//     document.getElementById("d6").style.display = "none";
-//     document.getElementById("answer").style.display = "none";
-// }
-// hideAllButQ1();
-
 
 function hideQuestion1() {
     document.getElementById('question1').style.display = "none";
@@ -28,6 +11,8 @@ function hideQuestion1() {
     document.getElementById("d2").style.display = "block";
     var roll1 = roll4Sided();
     finalStatement(roll1);
+    document.getElementById("answer").style.display = "block";
+    document.getElementById("answer").innerHTML = roll1;
 }
 
 
@@ -38,6 +23,8 @@ function hideQuestion2() {
     document.getElementById("d3").style.display = "block";
     var roll2 = roll6Sided();
     finalStatement(roll2);
+    document.getElementById("answer").style.display = "block";
+    document.getElementById("answer").innerHTML = roll2;
 }
 
 function hideQuestion3() {
@@ -47,6 +34,8 @@ function hideQuestion3() {
     document.getElementById("d4").style.display = "block";
     var roll3 = roll8Sided();
     finalStatement(roll3);
+    document.getElementById("answer").style.display = "block";
+    document.getElementById("answer").innerHTML = roll3;
 }
 
 function hideQuestion4() {
@@ -56,6 +45,8 @@ function hideQuestion4() {
     document.getElementById("d5").style.display = "block";
     var roll4 = roll12Sided();
     finalStatement(roll4);
+    document.getElementById("answer").style.display = "block";
+    document.getElementById("answer").innerHTML = roll4;
 }
 
 function hideQuestion5() {
@@ -65,13 +56,14 @@ function hideQuestion5() {
     document.getElementById("d6").style.display = "block";
     var roll5 = roll10Sided();
     finalStatement(roll5);
+    document.getElementById("answer").style.display = "block";
+    document.getElementById("answer").innerHTML = roll5;
 }
 
 function hideQuestion6() {
     document.getElementById('question6').style.display = "none";
     document.getElementById("end").style.display = "block";
     document.getElementById("d6").style.display = "none";
-
     document.getElementById("continue").style.display = "none";
     var roll6 = roll20Sided();
     finalStatement(roll6);
@@ -86,8 +78,6 @@ function restart() {
     location.reload();
 }
 
-
-
 function finalStatement(finalResult) {
     finalState.push(finalResult);
     if (finalState.length === 7) {
@@ -99,8 +89,6 @@ function finalStatement(finalResult) {
         document.getElementById("answer").style.display = "none";
     }
 }
-
-
 
 function roll4Sided() {
     var roll4 = (Math.round(Math.random() * (4 - 1) + 1));
@@ -117,7 +105,6 @@ function roll4Sided() {
     console.log(answer);
     return answer;
 }
-
 
 function roll6Sided() {
     var roll6 = (Math.round(Math.random() * (6 - 1) + 1));
@@ -138,7 +125,6 @@ function roll6Sided() {
     console.log(answer2);
     return answer2;
 }
-
 
 function roll8Sided() {
     var roll8 = (Math.round(Math.random() * (8 - 1) + 1));
@@ -163,8 +149,6 @@ function roll8Sided() {
     console.log(answer3);
     return answer3;
 }
-
-
 
 function roll10Sided() {
     var roll10 = (Math.round(Math.random() * (10 - 1) + 1));
@@ -204,8 +188,6 @@ function roll10Sided() {
     return answer4;
 }
 
-
-
 function roll12Sided() {
     var roll12 = (Math.round(Math.random() * (12 - 1) + 1));
     var answer5 = "";
@@ -244,13 +226,11 @@ function roll12Sided() {
             answer5 = "You'll be zooming around on a scooter during this trip.";
             break;
         default:
-            answer5 = "Are you in India? Because you're going to b taking rickshaws a lot.";
+            answer5 = "Are you in India? Because you're going to be taking rickshaws a lot.";
     }
     console.log(answer5);
     return answer5;
 }
-
-
 
 function roll20Sided() {
     var roll20 = (Math.round(Math.random() * (20 - 1) + 1));
