@@ -3,7 +3,7 @@
 
 var finalState = [];
 
-
+// Hide/display elements - these are called in the html
 function hideQuestion1() {
     document.getElementById('question1').style.display = "none";
     document.getElementById("question2").style.display = "block";
@@ -14,7 +14,6 @@ function hideQuestion1() {
     document.getElementById("answer").style.display = "block";
     document.getElementById("answer").innerHTML = roll1;
 }
-
 
 function hideQuestion2() {
     document.getElementById('question2').style.display = "none";
