@@ -19,7 +19,7 @@ This game requires a modern web browser with JavaScript enabled.
 * [Visual Studio Code](https://code.visualstudio.com/) - The code editor used
 * [HTML5](https://www.w3schools.com/html/html5_intro.asp) - Current Version of HTML
 * [CSS3](https://www.w3schools.com/css/default.asp) - Current Version of CSS
-*[JavaScript](https://www.w3schools.com/js/
+* [JavaScript](https://www.w3schools.com/js/) - Current Version of JavaScript
 
 ## Author
 
