@@ -4,21 +4,21 @@
 var finalState = [];
 
 // Hide Q2-Q6, die2-die6 on page load
-function hideAllButQ1() {
-    document.getElementById("question2").style.display = "none";
-    document.getElementById("question3").style.display = "none";
-    document.getElementById("question4").style.display = "none";
-    document.getElementById("question5").style.display = "none";
-    document.getElementById("question6").style.display = "none";
-    document.getElementById("end").style.display = "none";
-    document.getElementById("d2").style.display = "none";
-    document.getElementById("d3").style.display = "none";
-    document.getElementById("d4").style.display = "none";
-    document.getElementById("d5").style.display = "none";
-    document.getElementById("d6").style.display = "none";
-    document.getElementById("answer").style.display = "none";
-}
-hideAllButQ1();
+// function hideAllButQ1() {
+//     document.getElementById("question2").style.display = "none";
+//     document.getElementById("question3").style.display = "none";
+//     document.getElementById("question4").style.display = "none";
+//     document.getElementById("question5").style.display = "none";
+//     document.getElementById("question6").style.display = "none";
+//     document.getElementById("end").style.display = "none";
+//     document.getElementById("d2").style.display = "none";
+//     document.getElementById("d3").style.display = "none";
+//     document.getElementById("d4").style.display = "none";
+//     document.getElementById("d5").style.display = "none";
+//     document.getElementById("d6").style.display = "none";
+//     document.getElementById("answer").style.display = "none";
+// }
+// hideAllButQ1();
 
 
 function hideQuestion1() {

@@ -8,6 +8,21 @@
     background-size: 100%
 }
 
+#question2,
+#question3,
+#question4,
+#question5,
+#question6,
+#end,
+#d2,
+#d3,
+#d4,
+#d5,
+#d6,
+#answer {
+    display: none;
+}
+
 header {
     background-color: #B0AACD;
     border-radius: 25px;
