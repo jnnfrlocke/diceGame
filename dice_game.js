@@ -1,6 +1,8 @@
 "use strict"
 // A game that uses at least one 4-sided, 6-sided, 8-sided, 10-sided, 12-sided, and 20-sided dice
 
+var finalState = [];
+
 // Hide Q2-Q6, die2-die6 on page load
 function hideAllButQ1() {
     document.getElementById("question2").style.display = "none";
@@ -17,20 +19,26 @@ function hideAllButQ1() {
 }
 hideAllButQ1();
 
+
 function hideQuestion1() {
     document.getElementById('question1').style.display = "none";
     document.getElementById("question2").style.display = "block";
     document.getElementById("d1").style.display = "none";
     document.getElementById("d2").style.display = "block";
-    roll4Sided();
+    var roll1 = roll4Sided();
+    console.log(roll1);
+    finalStatement(roll1);
 }
+// var firstRoll = hideQuestion1;
+
 
 function hideQuestion2() {
     document.getElementById('question2').style.display = "none";
     document.getElementById("question3").style.display = "block";
     document.getElementById("d2").style.display = "none";
     document.getElementById("d3").style.display = "block";
-    roll6Sided();
+    var roll2 = roll6Sided();
+    finalStatement(roll2);
 }
 
 function hideQuestion3() {
@@ -38,7 +46,8 @@ function hideQuestion3() {
     document.getElementById("question4").style.display = "block";
     document.getElementById("d3").style.display = "none";
     document.getElementById("d4").style.display = "block";
-    roll8Sided();
+    var roll3 = roll8Sided();
+    finalStatement(roll3);
 }
 
 function hideQuestion4() {
@@ -46,7 +55,8 @@ function hideQuestion4() {
     document.getElementById("question5").style.display = "block";
     document.getElementById("d4").style.display = "none";
     document.getElementById("d5").style.display = "block";
-    roll12Sided();
+    var roll4 = roll12Sided();
+    finalStatement(roll4);
 }
 
 function hideQuestion5() {
@@ -54,7 +64,8 @@ function hideQuestion5() {
     document.getElementById("question6").style.display = "block";
     document.getElementById("d5").style.display = "none";
     document.getElementById("d6").style.display = "block";
-    roll10Sided();
+    var roll5 = roll10Sided();
+    finalStatement(roll5);
 }
 
 function hideQuestion6() {
@@ -64,7 +75,8 @@ function hideQuestion6() {
 
     document.getElementById("continue").style.display = "none";
     // document.getElementById("die1").style.display = "block";
-    roll20Sided();
+    var roll6 = roll20Sided();
+    finalStatement(roll6);
     // console.log(finalStatement());
 }
 
@@ -75,54 +87,56 @@ function restart() {
     location.reload();
 }
 
-// function finalStatement() {
-//     console.log(quest1 + " " + quest2 + " " + quest3 + " " + quest4 + " " + quest5 + " " + quest6);
-// }
+function finalStatement(finalResult) {
+    finalState.push(finalResult);
+    // console.log(quest1 + " " + quest2 + " " + quest3 + " " + quest4 + " " + quest5 + " " + quest6);
+}
 
 // finalStatement();
 
 
 function roll4Sided() {
     var roll4 = (Math.round(Math.random() * (4 - 1) + 1));
+    var answer = "";
     if (roll4 === 1) {
-        console.log("You'll be visiting a location by the sea.");
-        // document.write("You'll be visiting a location by the sea.");
+        answer = "You'll be visiting a location by the sea.";
     } else if (roll4 === 2) {
-        console.log("You're going to a place in the woods.");
-        // document.write("You're going to a place in the woods.");
+        answer = "You're going to a place in the woods.";
     } else if (roll4 === 3) {
-        console.log("You are going to the city.");
-        // document.write("You are going to the city.");
+        answer = "You are going to the city.";
     } else {
-        console.log("You'll be on a tropical island.");
-        // document.write("You'll be on a tropical island.");
+        answer = "You'll be on a tropical island.";
     }
-    //     console.log(roll4);
+    console.log(answer);
+    return answer;
 }
 
 // roll4Sided();
 
 function roll6Sided() {
     var roll6 = (Math.round(Math.random() * (6 - 1) + 1));
+    var answer2 = "";
     if (roll6 === 1) {
-        console.log("You'll be staying in a hotel.");
+        nnswer2 = "You'll be staying in a hotel.";
         // document.write("You'll be staying in a hotel.");
     } else if (roll6 === 2) {
-        console.log("You'll be staying at an all-inclusive resort.");
+        answer2 = "You'll be staying at an all-inclusive resort.";
         // document.write("You'll be staying at an all-inclusive resort.");
     } else if (roll6 === 3) {
-        console.log("You will stay at a cozy bed & breakfast.");
+        answer2 = "You will stay at a cozy bed & breakfast.";
         // document.write("You will stay at a cozy bed & breakfast.");
     } else if (roll6 === 4) {
-        console.log("You're going to be sleeping in a tent.");
+        answer2 = "You're going to be sleeping in a tent.";
         // document.write("You're going to be sleeping in a tent.");
     } else if (roll6 === 5) {
-        console.log("You will stay on a house boat.");
+        answer2 = "You will stay on a house boat.";
         // document.write("You will stay on a house boat.");
     } else {
-        console.log("You will stay with friends and family.");
+        answer2 = "You will stay with friends and family.";
         // document.write("You will stay with friends and family.");
     }
+    console.log(answer);
+    return answer2;
     // console.log(roll6);
 }
 
