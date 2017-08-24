@@ -98,11 +98,8 @@ function finalStatement(finalResult) {
     } else {
         document.getElementById("answer").style.display = "none";
     }
-    // if array = 6 then join
-    // console.log(quest1 + " " + quest2 + " " + quest3 + " " + quest4 + " " + quest5 + " " + quest6);
 }
 
-// finalStatement();
 
 
 function roll4Sided() {
