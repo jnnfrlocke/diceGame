@@ -94,6 +94,7 @@ function finalStatement(finalResult) {
         var finalAns = finalState.join(" ");
         document.getElementById("answer").style.display = "block";
         document.getElementById("answer").innerHTML = finalAns;
+        console.log(finalAns);
     } else {
         document.getElementById("answer").style.display = "none";
     }
@@ -283,7 +284,7 @@ function roll20Sided() {
             answer6 = "You're going to visit the casino today!";
             break;
         case 9:
-            canswer6 = "You're visiting the racetrack today!";
+            answer6 = "You're visiting the racetrack today!";
             break;
         case 10:
             answer6 = "You're going to watch the sunset tonight!";

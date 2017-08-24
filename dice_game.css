@@ -1,9 +1,11 @@
 :root {
     max-width: 80%;
+    height: auto;
     text-align: center;
     margin: auto;
     background-image: url(img/background.png);
     background-repeat: no-repeat;
+    background-size: 100%
 }
 
 header {
@@ -15,13 +17,27 @@ header {
 h1 {
     display: inline-block;
     vertical-align: text-bottom;
+    font-family: 'Lato', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 #question {
     max-width: 512px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.80);
+    background: rgba(233, 233, 233, 0.95);
     border: 1px solid black;
+}
+
+#answer {
+    /* max-width: 512px; */
+    margin: auto;
+    background: rgba(255, 255, 255);
+    border-top: none;
+    padding-bottom: 5px;
 }
 
 #end {
@@ -68,7 +84,6 @@ h1 {
 
 .die2 .pip:nth-of-type(2) {
     align-self: flex-end;
-    /* justify-content: space-around; */
 }
 
 .die3 {
