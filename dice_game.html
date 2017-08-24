@@ -4,159 +4,161 @@
 <head>
     <meta charset="UTF-8">
     <title>Dice Game</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="dice_game.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Let's play the vacation console game!</h1>
-    </header>
+    <div class="col-sm-8 col-sm-offset-2" id="background">
+        <header>
+            <h1>Let's play the vacation console game!</h1>
+        </header>
 
-    <section id="question">
-        <div id="question1">
-            <h2>
-                Where are you going?
-            </h2>
-        </div>
-
-        <div id="question2">
-            <h2>
-                What kind of lodging will you have?
-            </h2>
-        </div>
-
-        <div id="question3">
-            <h2>
-                We all forget things when we go on vacation. What will you forget?
-            </h2>
-        </div>
-
-        <div id="question4">
-            <h2>
-                What will be your main mode of transportation while you're away?
-            </h2>
-        </div>
-
-        <div id="question5">
-            <h2>
-                What are you going to have to eat once you get there?
-            </h2>
-        </div>
-
-        <div id="question6">
-            <h2>
-                After you arrive, what activity will you do first?
-            </h2>
-        </div>
-
-        <div id="end" onclick="restart()">
-            <h2>Click here to play again.</h2>
-        </div>
-
-        <div id="continue">
-            <h3>
-                Click on the die to roll and find out!
-            </h3>
-        </div>
-    </section>
-
-    <section id="dice">
-        <!-- The choice to use standard 1-6 dice is to represent a number for each step. Also, I have no idea how to make the different shapes for the other dice-->
-        <div onclick="hideQuestion1()" id="d1">
-            <div class="die1">
-                <span class="pip"></span>
+        <section id="question">
+            <div id="question1">
+                <h2>
+                    Where are you going?
+                </h2>
             </div>
-        </div>
 
-        <div onclick="hideQuestion2()" id="d2">
-            <div class="die2">
-                <span class="pip"></span>
-                <span class="pip"></span>
+            <div id="question2">
+                <h2>
+                    What kind of lodging will you have?
+                </h2>
             </div>
-        </div>
 
-        <div onclick="hideQuestion3()" id="d3">
-            <div class="die3">
-                <span class="pip"></span>
-                <span class="pip"></span>
-                <span class="pip"></span>
+            <div id="question3">
+                <h2>
+                    We all forget things when we go on vacation. What will you forget?
+                </h2>
             </div>
-        </div>
 
-        <div onclick="hideQuestion4()" id="d4">
-            <div class="die4">
-                <div class="column">
-                    <span class="pip"></span>
+            <div id="question4">
+                <h2>
+                    What will be your main mode of transportation while you're away?
+                </h2>
+            </div>
+
+            <div id="question5">
+                <h2>
+                    What are you going to have to eat once you get there?
+                </h2>
+            </div>
+
+            <div id="question6">
+                <h2>
+                    After you arrive, what activity will you do first?
+                </h2>
+            </div>
+
+            <div id="end" onclick="restart()">
+                <h2>Click here to play again.</h2>
+            </div>
+
+            <div id="continue">
+                <h3>
+                    Click on the die to roll and find out!
+                </h3>
+            </div>
+        </section>
+
+        <section id="dice">
+            <!-- The choice to use standard 1-6 dice is to represent a number for each step. Also, I have no idea how to make the different shapes for the other dice-->
+            <div onclick="hideQuestion1()" id="d1">
+                <div class="die1">
                     <span class="pip"></span>
                 </div>
-                <div class="column">
+            </div>
+
+            <div onclick="hideQuestion2()" id="d2">
+                <div class="die2">
                     <span class="pip"></span>
                     <span class="pip"></span>
                 </div>
             </div>
-        </div>
 
-        <div onclick="hideQuestion5()" id="d5">
-            <div class="die5">
-                <div class="column">
-                    <span class="pip"></span>
-                    <span class="pip"></span>
-                </div>
-                <div class="columnMid">
-                    <span class="pip"></span>
-                </div>
-                <div class="column">
-                    <span class="pip"></span>
-                    <span class="pip"></span>
-                </div>
-            </div>
-        </div>
-
-        <div onclick="hideQuestion6()" id="d6">
-            <div class="die6">
-                <div class="column">
-                    <span class="pip"></span>
-                    <span class="pip"></span>
-                    <span class="pip"></span>
-                </div>
-                <div class="column">
+            <div onclick="hideQuestion3()" id="d3">
+                <div class="die3">
                     <span class="pip"></span>
                     <span class="pip"></span>
                     <span class="pip"></span>
                 </div>
             </div>
 
+            <div onclick="hideQuestion4()" id="d4">
+                <div class="die4">
+                    <div class="column">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="column">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                </div>
+            </div>
 
-    </section>
+            <div onclick="hideQuestion5()" id="d5">
+                <div class="die5">
+                    <div class="column">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="columnMid">
+                        <span class="pip"></span>
+                    </div>
+                    <div class="column">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                </div>
+            </div>
 
-    <section id="answers">
-        <div id="finalAnswer">
-            <p id="answer">Placeholder for final answer.</p>
-        </div>
-        <div id="answer1">
-        </div>
-
-        <div id="answer2">
-        </div>
-
-        <div id="answer3">
-        </div>
-
-        <div id="answer4">
-        </div>
-
-        <div id="answer5">
-        </div>
-
-        <div id="answer6">
-        </div>
-
-    </section>
+            <div onclick="hideQuestion6()" id="d6">
+                <div class="die6">
+                    <div class="column">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                    <div class="column">
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                        <span class="pip"></span>
+                    </div>
+                </div>
 
 
+        </section>
 
-    <!-- <section id="dice">
+        <section id="answers">
+            <div id="finalAnswer">
+                <p id="answer">Placeholder for final answer.</p>
+            </div>
+            <div id="answer1">
+            </div>
+
+            <div id="answer2">
+            </div>
+
+            <div id="answer3">
+            </div>
+
+            <div id="answer4">
+            </div>
+
+            <div id="answer5">
+            </div>
+
+            <div id="answer6">
+            </div>
+
+        </section>
+
+
+
+        <!-- <section id="dice">
 
         <div class="die4">
             <div class=column>
@@ -191,11 +193,14 @@
         </div> -->
 
 
-    <!-- </section> -->
+        <!-- </section> -->
 
+        </div>
+        <!-- <div class="col-sm-2">
+            <p> </p>
+        </div> -->
 
-
-    <script src="dice_game.js"></script>
+        <script src="dice_game.js"></script>
 </body>
 
 </html>

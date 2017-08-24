@@ -1,7 +1,9 @@
 :root {
-    width: 50%;
+    max-width: 80%;
     text-align: center;
     margin: auto;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
 }
 
 header {
@@ -13,6 +15,13 @@ header {
 h1 {
     display: inline-block;
     vertical-align: text-bottom;
+}
+
+#question {
+    max-width: 512px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid black;
 }
 
 #end {
