@@ -148,7 +148,7 @@ function roll8Sided() {
     } else if (roll8 === 2) {
         answer3 = "You will forget toothpaste.";
     } else if (roll8 === 3) {
-        "You will forget  your comb.";
+        answer3 = "You will forget your comb.";
     } else if (roll8 === 4) {
         answer3 = "You will forget soap.";
     } else if (roll8 === 5) {
