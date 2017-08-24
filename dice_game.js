@@ -1,8 +1,11 @@
 "use strict"
 // A game that uses at least one 4-sided, 6-sided, 8-sided, 10-sided, 12-sided, and 20-sided dice
+// Hide/display functions can't be nested because they are being called from HTML
+
 
 var finalState = [];
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Hide/display elements - these are called in the html
 function hideQuestion1() {
     document.getElementById('question1').style.display = "none";
@@ -90,7 +93,10 @@ function finalStatement(finalResult) {
         document.getElementById("answer").style.display = "none";
     }
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Roll dice
 function roll4Sided() {
     var roll4 = (Math.round(Math.random() * (4 - 1) + 1));
@@ -280,7 +286,7 @@ function roll20Sided() {
             answer6 = "What's the local history like? That's what you'll learn today when you visit the historical monuments nearby.";
             break;
         case 15:
-            answer6 = "What language do the locals speak? Looks like you're going to learn it today. What's that? They speak your language? I guess you're signing up for another language class.";
+            answer6 = "What language do the locals speak? Looks like you're going to learn it today. What's that? They speak your language? I guess you're signing up for a different language class.";
 
             break;
         case 16:
@@ -301,3 +307,5 @@ function roll20Sided() {
     console.log(answer6);
     return answer6;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
