@@ -189,6 +189,7 @@ function roll10Sided() {
             break;
         case 9:
             answer4 = "You're going to enjoy Italian food tonight. Have a fine wine with your meal!"
+            break;
         default:
             answer4 = "You are having Japanese food tonight. Indulge in some saki! But avoid the fugu...";
     }
