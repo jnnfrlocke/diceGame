@@ -1,7 +1,7 @@
 
 Vacation Dice Game
 ===================
-This is a game using one each of a 4-sided, 6-sided, 8-sided, 10-sided, 12-sided, and 20-sided dice.
+This is a game using one each of a 4-sided, 6-sided, 8-sided, 10-sided, 12-sided, and 20-sided dice. This game decides where the player will go, what kind of accommodations they’ll have, and more.
 
 ----------
 
